@@ -6,9 +6,10 @@ client = TestClient(app)
 
 
 def test_api_people_full():
+    """Query for everything"""
     response = client.post(
         "/graphql",
-        json={"query": "query { people { email name address { number street city state } }}"},
+        json={"query": "query { people { email name address { number street city state } } }"},
     )
     assert response.status_code == 200
     assert response.json() == {
@@ -43,6 +44,28 @@ def test_api_people_full():
                         "city": "Ogdenville",
                         "state": "QLD",
                     },
+                },
+            ]
+        }
+    }
+
+
+def test_api_people_partial():
+    """Query just the email"""
+    response = client.post("/graphql", json={"query": "query { people { email } }"})
+    assert response.status_code == 200
+
+    assert response.json() == {
+        "data": {
+            "people": [
+                {
+                    "email": "costa@person.com",
+                },
+                {
+                    "email": "jake@person.com",
+                },
+                {
+                    "email": "sarah@person.com",
                 },
             ]
         }
