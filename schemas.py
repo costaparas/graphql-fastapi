@@ -5,7 +5,8 @@ import strawberry
 
 @strawberry.enum
 class State(Enum):
-    # Australian states (in alphabetical order!)
+    """Australian states (in alphabetical order!"""
+
     ACT = "Australia Capital Territory"
     NSW = "New South Wales"
     NT = "Northern Territory"
@@ -18,6 +19,8 @@ class State(Enum):
 
 @strawberry.type
 class Address:
+    """Components of a basic address"""
+
     number: int
     street: str
     city: str
@@ -26,6 +29,8 @@ class Address:
 
 @strawberry.type
 class Person:
+    """Essential details of a person"""
+
     email: str
     name: str
     address: Address
