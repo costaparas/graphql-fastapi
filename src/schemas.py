@@ -7,7 +7,7 @@ import strawberry
 
 @strawberry.enum
 class State(Enum):
-    """Australian states (in alphabetical order!"""
+    """Australian states (in alphabetical order!)"""
 
     ACT = "Australia Capital Territory"
     NSW = "New South Wales"

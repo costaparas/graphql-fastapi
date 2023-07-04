@@ -5,14 +5,17 @@ the [Strawberry](https://strawberry.rocks/) library.
 
 ## Project structure
 
-- [src/](src/): source code for the API
-- [tests/](tests/): unit tests for the API written with [pytest](https://docs.pytest.org)
+- [src/](src/):
+  source code for the API
+- [tests/](tests/):
+  unit tests for the API written with [pytest](https://docs.pytest.org)
 
 ## Prerequisites
 
 This project uses:
 
-- [Python 3.9.16](https://www.python.org/downloads/release/python-3100/) or above,
+- [Python 3.9.16](https://www.python.org/downloads/release/python-3100/)
+  or above,
 - [pip](https://packaging.python.org/en/latest/tutorials/installing-packages/#ensure-you-can-run-pip-from-the-command-line)
   for package management, and
 - [virtualenv](https://packaging.python.org/en/latest/tutorials/installing-packages/#creating-virtual-environments)
@@ -45,6 +48,9 @@ Check out the [Makefile](Makefile) for the commands to run. Description below:
 - `make run`: run the API server
 - `make test`: run the unit tests (+ coverage checking!)
 - `make lint`: apply some basic linting over the codebase
+
+Update the `PORT` number in the `Makefile` to run the API server on a different
+port if needed.
 
 Use of the Makefile assumes you are in an environment where
 [make](https://www.gnu.org/software/make/manual/make.html) is available. If
