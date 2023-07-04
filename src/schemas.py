@@ -1,3 +1,5 @@
+"""API schema"""
+
 from enum import Enum
 
 import strawberry
