@@ -14,7 +14,7 @@ the [Strawberry](https://strawberry.rocks/) library.
 
 This project uses:
 
-- [Python 3.9.16](https://www.python.org/downloads/release/python-3100/)
+- [Python 3.9.16](https://www.python.org/downloads/release/python-3916/)
   or above,
 - [pip](https://packaging.python.org/en/latest/tutorials/installing-packages/#ensure-you-can-run-pip-from-the-command-line)
   for package management, and
